@@ -20,7 +20,7 @@ from .views import home, exit, register
 from .views import Reggaeton, Principal, House, Trap
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', Principal, name='home'),
     path('products/', Principal, name='products'),
     path('logout/', exit, name='exit'),
     path('register/', register, name='register'),
